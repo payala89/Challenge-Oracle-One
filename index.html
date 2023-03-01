@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    </style>
+    <script src="script/script1.js"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="Imagenes/Logo.png" alt="Logo">
+        </h1>
+    </header>
+    <main>
+        <section id="input-texto">
+            <textarea id="mensaje-entrada" cols="30" rows="14" placeholder="Ingrese el texto aquí"></textarea>
+            <div id="nota">
+                <img src="Imagenes/bi_exclamation-circle-fill.png" alt="exclamación">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div id="botones">
+                <input id="btn-encriptar" type="button" value="Encriptar" onclick="encriptarMensaje()">
+                <input id="btn-desencriptar" type="button" value="Desencriptar" onclick="desencriptarMensaje()">
+            </div>
+        </section>
+
+        <section id="output-texto">
+            <div id="tarjeta">
+                <div id="tarjeta-sin-mensaje">
+                    <img src="Imagenes/Muñeco.png" alt="muñeco">
+                    <div id="cuadro-mensaje">
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <p>Ingrese el texto que desees encriptar o desencriptar</p>
+                    </div>
+                </div>
+
+                <div id="tarjeta-con-mensaje">
+                    <p id="mensaje-salida"></p>
+                    <input id="btn-copiar" type="button" value="Copiar" onclick="copiarResultado()">
+                    
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <strong><p>&copy Copyright PAULO AYALA</p> <br>
+            <p>Profesional de la tecnología</p></strong>
+        </div>
+    </footer>
+</body>
+</html>
