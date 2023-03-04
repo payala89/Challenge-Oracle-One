@@ -245,7 +245,8 @@ main{
 
 
 footer{
-    top: calc(944px + 16*4px);
+    position: relative;
+    top: 16px;
 }
 
 }
@@ -323,8 +324,8 @@ footer{
     }
 
     footer{
-        top: calc(944px + 16*6px);
-        width: calc(100vw - 16*2px);
+        position: relative;
+        top: 16px;
     }
 
 }
